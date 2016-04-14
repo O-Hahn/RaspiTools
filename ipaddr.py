@@ -12,7 +12,7 @@ for i in ints:
     try:
       ni.ifaddresses(i)[2][0]['addr']
       setColor("blue")
-      print(hostname + " ETH Address:" + ni.ifaddresses(i)[2][0]['addr'])
+      print("Host: "+hostname + " ETH Address:" + ni.ifaddresses(i)[2][0]['addr'])
       setText(hostname + "#" + ni.ifaddresses(i)[2][0]['addr'])
     except:
       pass
@@ -20,7 +20,7 @@ for i in ints:
     try:
       ni.ifaddresses(i)[2][0]['addr']
       setColor("blue")
-      print(hostname + " WLAN Address: " + ni.ifaddresses(i)[2][0]['addr'])
+      print("Host: " + hostname + " WLAN Address: " + ni.ifaddresses(i)[2][0]['addr'])
       setText(hostname + "#" + ni.ifaddresses(i)[2][0]['addr'])
     except:
       pass
